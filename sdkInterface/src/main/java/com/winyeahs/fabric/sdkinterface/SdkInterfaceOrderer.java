@@ -3,7 +3,7 @@ package com.winyeahs.fabric.sdkinterface;
 import com.winyeahs.fabric.sdkinterface.base.SdkInterfaceBase;
 
 /**
- * Created by linwf on 2018/10/28.
+ * @author chenyajun
  */
 public class SdkInterfaceOrderer extends SdkInterfaceBase {
     // orderer 排序服务器的域名

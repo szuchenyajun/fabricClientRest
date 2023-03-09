@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 /**
- * Created by linwf on 2018/10/28.
+ * @author chenyajun
  */
 public class SdkInterfaceChaincode extends SdkInterfaceBase {
     private static Logger log = Logger.getLogger(SdkInterfaceChaincode.class);

@@ -19,7 +19,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by linwf on 2018/10/28.
+ * @author chenyajun
  */
 public class SdkInterfaceChannel extends SdkInterfaceBase {
     private SdkInterfaceOrg org;
@@ -140,7 +140,7 @@ public class SdkInterfaceChannel extends SdkInterfaceBase {
         if (this.channel == null) {
             this.client.setUserContext(this.org.getUser("Admin"));
             //初始化 ChannelConfiguration 对象.参数是通道初始化文件路径
-            ChannelConfiguration channelConfiguration = new ChannelConfiguration(new File("./channel-artifacts/"+this.channelName + ".tx"));
+            ChannelConfiguration channelConfiguration = new ChannelConfiguration(new File("D:\\fabricClientRest\\clientRest\\src\\main\\resources\\channel-artifacts\\"+this.channelName + ".tx"));
             if (!isCreate) {
                 this.channel = this.client.newChannel(this.channelName);
                 int PeersCount = org.getPeers().size();

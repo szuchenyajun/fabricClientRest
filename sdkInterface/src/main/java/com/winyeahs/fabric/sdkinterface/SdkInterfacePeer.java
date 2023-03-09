@@ -3,7 +3,7 @@ package com.winyeahs.fabric.sdkinterface;
 import com.winyeahs.fabric.sdkinterface.base.SdkInterfaceBase;
 
 /**
- * Created by linwf on 2018/10/28.
+ * @author chenyajun
  */
 public class SdkInterfacePeer extends SdkInterfaceBase {
     // 节点域名

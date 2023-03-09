@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.Set;
 
 /**
- * Created by linwf on 2018/10/28.
+ * @author chenyajun
  */
 public class SdkInterfaceUser extends SdkInterfaceBase implements User, Serializable {
 

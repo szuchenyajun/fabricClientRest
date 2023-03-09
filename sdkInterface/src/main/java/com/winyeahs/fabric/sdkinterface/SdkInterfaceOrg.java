@@ -19,7 +19,7 @@ import java.util.concurrent.TimeoutException;
 
 
 /**
- * Created by linwf on 2018/10/28.
+ * @author chenyajun
  */
 public class SdkInterfaceOrg extends SdkInterfaceBase {
     int SUCCESS = 200;
@@ -277,7 +277,7 @@ public class SdkInterfaceOrg extends SdkInterfaceBase {
 
         File skFile = Paths.get(cryptoConfigPath, "/peerOrganizations/", this.orgDomain, String.format("/users/%s@%s/msp/keystore", "Admin", this.orgDomain)).toFile();
         File certificateFile = Paths.get(cryptoConfigPath, "/peerOrganizations/", this.getOrgDomain(), //add by linwf in 2018-07-09
-                String.format("/users/%s@%s/msp/signcerts/cert.pem", "Admin", this.orgDomain)).toFile(); //add by linwf in 2018-07-09
+                String.format("/users/%s@%s/msp/signcerts/Admin@org1.winyeahs.com-cert.pem", "Admin", this.orgDomain)).toFile(); //add by linwf in 2018-07-09
         log.debug("skFile = " + skFile.getAbsolutePath());
         log.debug("certificateFile = " + certificateFile.getAbsolutePath());
         // 一个特殊的用户，可以创建通道，连接对等点，并安装链码
